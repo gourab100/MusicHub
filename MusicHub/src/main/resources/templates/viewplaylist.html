@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>View Playlists</title>
+   <link rel="stylesheet" type="text/css" href="style/viewplaylist.css">
+</head>
+<body>
+    <!-- Iterate through each playlist -->
+    <div th:each="playlist : ${playlists}" class="playlist-container">
+        <div class="playlist-name" th:text="${playlist.name}" onclick="togglePlaylist(this)"></div> <!-- Display playlist name -->
+        
+        <div class="playlist-details">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Play</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Iterate through songs in the playlist -->
+                    <tr th:each="song : ${playlist.songs}">
+                    
+                        <td><span th:text="${song.name}"></span></td>
+                          <td>
+                            <div class="audio-player">
+                                <audio controls class="audio-controls">
+                                    <source th:src="${song.link}" type="audio/mpeg">
+                                </audio>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-inner"></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function togglePlaylist(element) {
+            var playlistDetails = element.nextElementSibling;
+            if (playlistDetails.style.display === "none") {
+                playlistDetails.style.display = "block";
+            } else {
+                playlistDetails.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
