@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Song </title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input[type="text"], input[type="url"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+            
+        }
+    </style>
+</head>
+<body>
+
+ <h1>Music Information</h1>
+<form action="/addsongs" method="post">
+        <label for="name">Song Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="artist">Song Artist:</label>
+        <input type="text" id="artist" name="artist" required><br>
+
+        <label for="genre">Song Genre:</label>
+        <input type="text" id="genre" name="genre" required><br>
+
+        <label for="link">Song Link:</label>
+        <input type="url" id="link" name="link" required><br>
+
+        <input type="submit" value="Add Song">
+    </form>
+
+</body>
+</html>

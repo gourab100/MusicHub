@@ -1,0 +1,209 @@
+/* Reset some default styles */
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	background-color: black;
+	font: #fff;
+}
+
+section {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	background-color: #545961;
+	font: #fff;
+}
+
+section .imgbx {
+	position: relative;
+	width: 50%;
+	height: 100%;
+}
+
+section .imgbx:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(225deg, #e91e63, #03a9f4);
+	z-index: 1;
+	mix-blend-mode: screen;
+}
+
+section .imgbx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+section .contentbx {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+}
+
+section .contentbx .formbx {
+	width: 50%;
+	text-align: center;
+}
+
+section .contentbx .formbx .logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left:50px;
+	width: 60%;
+	height: 150px;
+	padding-bottom: 50px;
+}
+
+section .contentbx .formbx h2 {
+	color: #fff;
+	font-weight: 600;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	display: inline-block;
+	letter-spacing: 1px;
+}
+
+section .contentbx .formbx .inputbx {
+	margin-bottom: 20px;
+	padding: 20px;
+}
+
+section .contentbx .formbx .inputbx input {
+	width: 100%;
+	height: 50px; padding : 10px 20px;
+	outline: none;
+	font-weight: 400;
+	border: 1px solid #607d8b;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #607d8b;
+	background: transparent;
+	border-radius: 30px;
+	padding: 10px 20px;
+}
+
+section .contentbx .formbx .inputbx input[type="submit"] {
+	background: #ff4584;
+	color: #fff;
+	outLine: none;
+	border: none;
+	font-weight: 500;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+section .contentbx .formbx .inputbx input[type="submit"]:hover {
+	background: #f53677;
+}
+
+section .contentbx .formbx h3 {
+	color: #fff;
+	text-align: center;
+	margin: 80px 10px 10px 20px;
+	font-weight: 500;
+}
+
+section .contentbx .formbx .sci {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section .contentbx .formbx .sci {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section .contentbx .formbx .sci li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	width: 50px;
+	height: 50px;
+	background: #545961;
+	border-radius: 50%;
+	margin: 0 20px;
+	cursor: pointer;
+	padding: 10px;
+}
+
+section .contentbx .formbx .sci li:hover {
+	background: #fff;
+}
+
+section .contentbx .formbx .sci li img {
+	transform: scale(0.5);
+	filter: invert(1);
+}
+
+/*  body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #c0c0c0; Set background color
+        }
+        .navbar{
+        background-color: #545961;
+        }
+         .navbar-brand img {
+            max-height: 100px; Adjust logo height as needed
+        }
+
+        Custom CSS for container
+        .container {
+            height: 100px;
+             Make container full height of the viewport
+        }
+
+        Custom CSS for card
+        .card {
+            border: none;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        Custom CSS for logo
+        .logo {
+            width: 100px;
+            margin-bottom: 100px; 
+            margin-top: 100pxSet width of the logo
+        }
+
+        Custom CSS for buttons
+        .btn-outline-light {
+            color: #fff; Set text color
+            border-color: #fff; Set border color
+        }
+
+        .btn-outline-light:hover {
+            color: #212529; Change text color on hover
+            background-color: #fff; Change background color on hover
+            border-color: #fff; Change border color on hover
+        }
+        
+        
+        
+         Custom CSS for footer
+        .footer {
+            background-color: #545961;
+            padding: 20px 0; Add some padding
+        }
+
+        .footer a {
+            color: #fff; Set link color
+            margin-right: 15px; Add some spacing between links
+        } */
